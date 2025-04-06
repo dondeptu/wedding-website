@@ -4,7 +4,7 @@ import { GlobalStyle } from "./GlobalStyle";
 import { WeddingHomepage } from "../../features/weddingHomepage";
 import { Navigation } from "../../common/Navigation";
 import { BrowserRouter, Route, Routes } from "react-router";
-import { toOurStory, toPhotoBook, toStay } from "./routes";
+import { toHomepage, toOurStory, toPhotoBook, toStay } from "./routes";
 
 export const App = () => {
     return (
@@ -13,7 +13,7 @@ export const App = () => {
                 <GlobalStyle />
                 <Navigation />
                 <Routes>
-                    <Route path="/" element={<WeddingHomepage />} />
+                    <Route path={toHomepage()} element={<WeddingHomepage />} />
                     <Route path={toOurStory()} />
                     <Route path={toStay()} />
                     <Route path={toPhotoBook()} />
