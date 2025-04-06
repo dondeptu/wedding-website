@@ -1,8 +1,13 @@
-import { toOurStory, toPhotoBook, toStay } from "../../core/App/routes";
-import { List, StyledNavLink } from "./styled";
+import { NavLink } from "react-router";
+import { toHomepage, toOurStory, toPhotoBook, toStay } from "../../core/App/routes";
+import { List, LogoLink, StyledNavLink, StyledRsvpButton, Wrapper } from "./styled";
+
 
 export const Navigation = () => (
-    <nav>
+    <Wrapper>
+        <NavLink to={toHomepage()}>
+            <LogoLink />
+        </NavLink>
         <List>
             <li>
                 <StyledNavLink to={toOurStory()}>Nasza Historia</StyledNavLink>
@@ -14,5 +19,6 @@ export const Navigation = () => (
                 <StyledNavLink to={toPhotoBook()}>Galeria</StyledNavLink>
             </li>
         </List>
-    </nav>
+        <StyledRsvpButton title={"RSVP"} />
+    </Wrapper>
 );
