@@ -4,10 +4,6 @@ export const Wrapper = styled.header`
     
 `;
 
-export const BannerContainer = styled.div`
-    
-`;
-
 export const Banner = styled.img`
     position: relative;
     height: 100vh;
