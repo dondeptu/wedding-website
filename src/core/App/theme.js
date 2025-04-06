@@ -14,7 +14,13 @@ export const theme = {
         primary: colors.cabbagePont,
         page: {
             background: colors.merino,
+            header: colors.cabbagePont,
             text: colors.codGray,
+        },
+        darkSection: {
+            background: colors.cabbagePont,
+            header: colors.merino,
+            text: colors.merino,
         },
     },
 };
