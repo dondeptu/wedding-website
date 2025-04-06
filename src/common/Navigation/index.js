@@ -1,24 +1,15 @@
-import { NavLink } from "react-router";
-import { toHomepage, toOurStory, toPhotoBook, toStay } from "../../core/App/routes";
-import { List, LogoLink, StyledNavLink, StyledRsvpButton, Wrapper } from "./styled";
+import { theme } from "../../core/App/theme";
+import { DesktopNav } from "./DesktopNav";
+import { MobileNav } from "./MobileNav";
+import useWindowWidth from "./useWindowWidth";
 
+export const Navigation = () => {
+    const windowWidth = useWindowWidth();
+    const mobileMax = theme.breakpoints.mobileMax;
 
-export const Navigation = () => (
-    <Wrapper>
-        <NavLink to={toHomepage()}>
-            <LogoLink />
-        </NavLink>
-        <List>
-            <li>
-                <StyledNavLink to={toOurStory()}>Nasza Historia</StyledNavLink>
-            </li>
-            <li>
-                <StyledNavLink to={toStay()}>Nocleg</StyledNavLink>
-            </li>
-            <li>
-                <StyledNavLink to={toPhotoBook()}>Galeria</StyledNavLink>
-            </li>
-        </List>
-        <StyledRsvpButton title={"RSVP"} />
-    </Wrapper>
-);
+    return (
+        <nav>
+            { windowWidth >= mobileMax ? <DesktopNav /> : <MobileNav />}
+        </nav>
+    );
+};

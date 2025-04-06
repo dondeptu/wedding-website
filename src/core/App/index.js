@@ -2,9 +2,9 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
 import { GlobalStyle } from "./GlobalStyle";
 import { WeddingHomepage } from "../../features/weddingHomepage";
-import { Navigation } from "../../common/Navigation";
 import { BrowserRouter, Route, Routes } from "react-router";
 import { toHomepage, toOurStory, toPhotoBook, toStay } from "./routes";
+import { Navigation } from "../../common/Navigation";
 
 export const App = () => {
     return (

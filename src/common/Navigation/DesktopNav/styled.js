@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { NavLink } from "react-router";
-import { ReactComponent as Logo } from "./logo.svg";
-import { ButtonLink as RsvpButton } from "../ButtonLink";
+import { ReactComponent as Logo } from "../logo.svg";
+import { ButtonLink as RsvpButton } from "../../ButtonLink";
 
-export const Wrapper = styled.nav`
+export const Wrapper = styled.div`
     width: 100%;
     position: absolute;
     top: 0;
