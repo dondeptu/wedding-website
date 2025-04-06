@@ -6,7 +6,7 @@ export const colors = {
 
 export const theme = {
     breakpoints: {
-        mobileMax: 767,
+        mobileMax: 776,
     },
     headingFont: "'Waterfall', cursive;",
     colors: {

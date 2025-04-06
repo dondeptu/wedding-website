@@ -23,21 +23,39 @@ export const Container = styled.div`
     transform: translate(-50%, -50%);
     display: grid;
     justify-items: center;
+    text-align: center;
     grid-gap: 32px;
+    width: 100%;
+    padding: 16px;
     color: ${({ theme }) => theme.colors.textPrimary};
     text-shadow: 0px 0px 18px ${({ theme }) => theme.colors.primary};
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        grid-gap: 24px;
+        padding: 8px;
+    }
 `;
 
 export const Newlyweds = styled.h1`
     font-size: 80px;
     font-weight: 400;
     margin: 0;
+    text-transform: uppercase;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 62px;
+    }
 `;
 
 export const WeddingDate = styled.h2`
     order: -1;
     margin: 0;
+    font-size: 28px;
     font-weight: 400;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 24px;
+    }
 `;
 
 export const WeddigPlace = styled.h3`
@@ -45,4 +63,8 @@ export const WeddigPlace = styled.h3`
     font-family: ${({ theme }) => theme.headingFont};
     font-size: 54px;
     font-weight: 400;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 46px;
+    }
 `;
