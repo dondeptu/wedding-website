@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.header`
-    
+
 `;
 
 export const Banner = styled.img`
@@ -27,7 +27,8 @@ export const Container = styled.div`
     text-shadow: 0px 0px 18px ${({ theme }) => theme.colors.primary};
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        grid-gap: 24px;
+        top: 55%;
+        grid-gap: 22px;
         padding: 8px;
     }
 `;
@@ -39,7 +40,7 @@ export const Newlyweds = styled.h1`
     text-transform: uppercase;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        font-size: 62px;
+        font-size: 46px;
     }
 `;
 
@@ -50,7 +51,7 @@ export const WeddingDate = styled.h2`
     font-weight: 400;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        font-size: 24px;
+        font-size: 22px;
     }
 `;
 
@@ -61,6 +62,6 @@ export const WeddigPlace = styled.h3`
     font-weight: 400;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        font-size: 46px;
+        font-size: 36px;
     }
 `;

@@ -1,6 +1,7 @@
 export const colors = {
     merino: "#f9f6ed",
     codGray: "#121212",
+    flaxSmoke: "#7f886b",
     cabbagePont: "#3e4f3c",
 };
 
@@ -19,8 +20,7 @@ export const theme = {
         },
         darkSection: {
             background: colors.cabbagePont,
-            header: colors.merino,
-            text: colors.merino,
         },
+        navBackground: colors.flaxSmoke,
     },
 };
