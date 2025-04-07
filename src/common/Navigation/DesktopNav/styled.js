@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import { NavLink } from "react-router";
 import { ReactComponent as Logo } from "../logo.svg";
-import { ButtonLink as RsvpButton } from "../../ButtonLink";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.nav`
     width: 100%;
     position: absolute;
     top: 0;
@@ -30,15 +29,10 @@ export const StyledNavLink = styled(NavLink)`
     text-decoration: none;
     font-size: 18px;
     letter-spacing: 0;
-    transition: color 0.3s ease;
 `;
 
 export const LogoLink = styled(Logo)`
     width: 90px;
     height: auto;
     color: ${({ theme }) => theme.colors.textPrimary};
-`;
-
-export const StyledRsvpButton = styled(RsvpButton)`
-    
 `;

@@ -8,8 +8,6 @@ export const Navigation = () => {
     const mobileMax = theme.breakpoints.mobileMax;
 
     return (
-        <nav>
-            { windowWidth >= mobileMax ? <DesktopNav /> : <MobileNav />}
-        </nav>
+        windowWidth >= mobileMax ? <DesktopNav /> : <MobileNav />
     );
 };

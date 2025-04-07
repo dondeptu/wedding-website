@@ -3,7 +3,7 @@ import banner from "./banner.jpeg";
 
 export const Header = () => (
     <Wrapper>
-        <Banner src={banner} />
+        <Banner src={banner} alt="tło" />
         <Container>
             <Newlyweds>Donata & Marcin</Newlyweds>
             <WeddingDate>24.08.2025</WeddingDate>
