@@ -1,7 +1,7 @@
-import { StyledNavLink } from "./styled";
+import { StyledButtonLink } from "./styled";
 
 export const ButtonLink = ({ title }) => (
-    <StyledNavLink>
+    <StyledButtonLink>
         {title}
-    </StyledNavLink>
+    </StyledButtonLink>
 );
