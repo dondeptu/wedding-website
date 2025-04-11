@@ -23,7 +23,7 @@ export const Layout = styled.div`
         display: flex;
         flex-direction: column;
         gap: 58px;
-        padding: 120px 30px;
+        padding: 120px 16px;
     }
 `;
 
