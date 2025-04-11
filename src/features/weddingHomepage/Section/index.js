@@ -12,6 +12,7 @@ import {
 } from "./styled";
 import useWindowWidth from "../../../common/useWindowWidth";
 import { theme } from "../../../core/App/theme";
+import { toOurStory } from "../../../core/App/routes";
 
 export const Section = ({ title, text, mainImgPath, sideImgPath }) => {
     const windowWidth = useWindowWidth();
@@ -34,7 +35,7 @@ export const Section = ({ title, text, mainImgPath, sideImgPath }) => {
                 )}
                 <Paragraph>{text}</Paragraph>
                 <ButtonWrapper>
-                    <StyledButtonLink>
+                    <StyledButtonLink to={toOurStory()}>
                         Przeczytaj naszą historię
                     </StyledButtonLink>
                 </ButtonWrapper>
