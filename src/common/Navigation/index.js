@@ -1,13 +1,14 @@
 import { theme } from "../../core/App/theme";
+import useWindowWidth from "../useWindowWidth";
 import { DesktopNav } from "./DesktopNav";
 import { MobileNav } from "./MobileNav";
-import useWindowWidth from "./useWindowWidth";
+
 
 export const Navigation = () => {
     const windowWidth = useWindowWidth();
-    const mobileMax = theme.breakpoints.mobileMax;
+    const tabletMax = theme.breakpoints.tabletMax;
 
     return (
-        windowWidth >= mobileMax ? <DesktopNav /> : <MobileNav />
+        windowWidth > tabletMax ? <DesktopNav /> : <MobileNav />
     );
 };
