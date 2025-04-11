@@ -1,12 +1,9 @@
 import { ToggleMenuButton, StyledLogo, StyledNavLink, NavHeader } from "./styled";
 import { toHomepage } from "../../../core/App/routes";
-import { useState } from "react";
 import { DropdownMenu } from "./DropdownMenu";
 
-export const MobileNav = () => {
-    const [isMenuOpen, setIMenuOpen] = useState(false);
-
-    const toggleMenu = () => setIMenuOpen(!isMenuOpen);
+export const MobileNav = ({ isMenuOpen, setIsMenuOpen }) => {
+    const toggleMenu = () => setIsMenuOpen(isMenuOpen => !isMenuOpen);
 
     return (
         <>

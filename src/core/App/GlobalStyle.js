@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 import normalize from "styled-normalize";
 
 export const GlobalStyle = createGlobalStyle`
@@ -20,5 +20,9 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         letter-spacing: 0.05em;
         word-break: break-word;
+
+        ${({ $lockScroll }) => $lockScroll && css`
+            overflow: hidden;
+        `}
     }
 `;
