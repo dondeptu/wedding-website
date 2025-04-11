@@ -11,7 +11,11 @@ export const MobileNav = () => {
     return (
         <>
             <NavHeader>
-                <StyledNavLink to={toHomepage()} aria-label="Przejdź do strony głównej">
+                <StyledNavLink
+                    to={toHomepage()}
+                    aria-label="Przejdź do strony głównej"
+                    onClick={isMenuOpen ? () => dispatch(toggleMenu()) : ""}
+                >
                     <StyledLogo alt="Logo" />
                 </StyledNavLink>
                 <ToggleMenuButton

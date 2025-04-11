@@ -1,10 +1,11 @@
 import { toOurStory, toPhotoBook, toRSVP, toStay } from "../../../../core/App/routes";
 import { List, StyledNavLink, NavWrapper, LayoutWrapper } from "./styled";
 import { ButtonLink as RsvpButtonLink } from "../../../ButtonLink/styled";
-import { useSelector } from "react-redux";
-import { selectIsMenuOpen } from "../mobileNavSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { selectIsMenuOpen, toggleMenu } from "../mobileNavSlice";
 
 export const DropdownMenu = () => {
+    const dispatch = useDispatch();
     const isMenuOpen = useSelector(selectIsMenuOpen);
 
     return (
@@ -12,16 +13,35 @@ export const DropdownMenu = () => {
             <LayoutWrapper>
                 <List>
                     <li>
-                        <StyledNavLink to={toOurStory()}>Nasza Historia</StyledNavLink>
+                        <StyledNavLink
+                            to={toOurStory()}
+                            onClick={() => dispatch(toggleMenu())}
+                        >
+                            Nasza Historia
+                        </StyledNavLink>
                     </li>
                     <li>
-                        <StyledNavLink to={toStay()}>Nocleg</StyledNavLink>
+                        <StyledNavLink
+                            to={toStay()}
+                            onClick={() => dispatch(toggleMenu())}
+                        >
+                            Nocleg
+                        </StyledNavLink>
                     </li>
                     <li>
-                        <StyledNavLink to={toPhotoBook()}>Galeria</StyledNavLink>
+                        <StyledNavLink
+                            to={toPhotoBook()}
+                            onClick={() => dispatch(toggleMenu())}
+                        >
+                            Galeria
+                        </StyledNavLink>
                     </li>
                 </List>
-                <RsvpButtonLink to={toRSVP()} aria-label="RSVP - potwierdź obecność">
+                <RsvpButtonLink
+                    to={toRSVP()}
+                    onClick={() => dispatch(toggleMenu())}
+                    aria-label="RSVP - potwierdź obecność"
+                >
                     RSVP
                 </RsvpButtonLink>
             </LayoutWrapper>
