@@ -1,6 +1,6 @@
 import { toOurStory, toPhotoBook, toStay } from "../../../../core/App/routes";
 import { List, StyledNavLink, NavWrapper, LayoutWrapper } from "./styled";
-import { ButtonLink as RsvpButtonLink } from "../../../ButtonLink";
+import { ButtonLink as RsvpButtonLink } from "../../../ButtonLink/styled";
 
 export const DropdownMenu = ({ isOpen }) => {
 
@@ -18,7 +18,9 @@ export const DropdownMenu = ({ isOpen }) => {
                         <StyledNavLink to={toPhotoBook()}>Galeria</StyledNavLink>
                     </li>
                 </List>
-                <RsvpButtonLink title={"RSVP"} aria-label="RSVP - potwierdź obecność" />
+                <RsvpButtonLink aria-label="RSVP - potwierdź obecność">
+                    RSVP
+                </RsvpButtonLink>
             </LayoutWrapper>
         </NavWrapper >
     );

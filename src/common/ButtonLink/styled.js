@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { NavLink } from "react-router";
 
-export const StyledButtonLink = styled(NavLink)`
+export const ButtonLink = styled(NavLink)`
     text-decoration: none;
     font-size: 18px;
     color: currentColor;
@@ -11,7 +11,7 @@ export const StyledButtonLink = styled(NavLink)`
     box-shadow: 0 0 2px ${({ theme }) => theme.colors.textPrimary};
     transition: background-color 0.3s ease;
 
-    &:hover {
+    &:hover, &:active {
         background-color: ${({ theme }) => theme.colors.textPrimary};
         color: ${({ theme }) => theme.colors.primary};
         border-color: ${({ theme }) => theme.colors.textPrimary};
