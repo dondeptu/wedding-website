@@ -5,16 +5,17 @@ import { WeddingHomepage } from "../../features/weddingHomepage";
 import { HashRouter, Route, Routes } from "react-router";
 import { toHomepage, toOurStory, toPhotoBook, toStay } from "./routes";
 import { Navigation } from "../../common/Navigation";
-import { useState } from "react";
+import { useSelector } from "react-redux";
+import { selectIsMenuOpen } from "../../common/Navigation/MobileNav/mobileNavSlice";
 
 export const App = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const isMenuOpen = useSelector(selectIsMenuOpen);
 
     return (
         <HashRouter>
             <ThemeProvider theme={theme}>
                 <GlobalStyle $lockScroll={isMenuOpen} />
-                <Navigation isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+                <Navigation />
                 <Routes>
                     <Route path={toHomepage()} element={<WeddingHomepage />} />
                     <Route path={toOurStory()} />

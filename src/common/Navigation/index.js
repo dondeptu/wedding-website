@@ -4,16 +4,13 @@ import { DesktopNav } from "./DesktopNav";
 import { MobileNav } from "./MobileNav";
 
 
-export const Navigation = ({ isMenuOpen, setIsMenuOpen }) => {
+export const Navigation = () => {
     const windowWidth = useWindowWidth();
     const tabletMax = theme.breakpoints.tabletMax;
 
     return (
         windowWidth > tabletMax
             ? <DesktopNav />
-            : <MobileNav
-                isMenuOpen={isMenuOpen}
-                setIsMenuOpen={setIsMenuOpen}
-            />
+            : <MobileNav />
     );
 };

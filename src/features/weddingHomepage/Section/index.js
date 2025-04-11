@@ -18,7 +18,7 @@ export const Section = ({ title, text, mainImgPath, sideImgPath }) => {
     const mobileMax = theme.breakpoints.tabletMax;
 
     const isMobile = () => windowWidth <= mobileMax;
-    
+
     return (
         <Wrapper>
             <Layout>

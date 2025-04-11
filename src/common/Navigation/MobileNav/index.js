@@ -1,9 +1,12 @@
 import { ToggleMenuButton, StyledLogo, StyledNavLink, NavHeader } from "./styled";
 import { toHomepage } from "../../../core/App/routes";
 import { DropdownMenu } from "./DropdownMenu";
+import { useDispatch, useSelector } from "react-redux";
+import { selectIsMenuOpen, toggleMenu } from "./mobileNavSlice";
 
-export const MobileNav = ({ isMenuOpen, setIsMenuOpen }) => {
-    const toggleMenu = () => setIsMenuOpen(isMenuOpen => !isMenuOpen);
+export const MobileNav = () => {
+    const dispatch = useDispatch();
+    const isMenuOpen = useSelector(selectIsMenuOpen);
 
     return (
         <>
@@ -13,7 +16,7 @@ export const MobileNav = ({ isMenuOpen, setIsMenuOpen }) => {
                 </StyledNavLink>
                 <ToggleMenuButton
                     $isOpen={isMenuOpen}
-                    onClick={() => toggleMenu()}
+                    onClick={() => dispatch(toggleMenu())}
                     aria-expanded={isMenuOpen ? 'true' : 'false'}
                     aria-controls="dropdown-menu"
                     aria-label="Główne menu nawigacyjne"

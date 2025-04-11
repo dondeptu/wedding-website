@@ -1,11 +1,14 @@
 import { toOurStory, toPhotoBook, toStay } from "../../../../core/App/routes";
 import { List, StyledNavLink, NavWrapper, LayoutWrapper } from "./styled";
 import { ButtonLink as RsvpButtonLink } from "../../../ButtonLink/styled";
+import { useSelector } from "react-redux";
+import { selectIsMenuOpen } from "../mobileNavSlice";
 
-export const DropdownMenu = ({ isOpen }) => {
+export const DropdownMenu = () => {
+    const isMenuOpen = useSelector(selectIsMenuOpen);
 
     return (
-        <NavWrapper $isOpen={isOpen}>
+        <NavWrapper $isOpen={isMenuOpen}>
             <LayoutWrapper>
                 <List>
                     <li>
