@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/wedding-website/static/js/main.29c06007.js",
+    "main.js": "/wedding-website/static/js/main.ebd0fd13.js",
     "static/js/453.770c9077.chunk.js": "/wedding-website/static/js/453.770c9077.chunk.js",
     "static/media/mountain-distant.jpg": "/wedding-website/static/media/mountain-distant.e196518ce6b41d566520.jpg",
     "static/media/beach.jpg": "/wedding-website/static/media/beach.7f0662dab0ed0b688542.jpg",
@@ -9,10 +9,10 @@
     "static/media/mountain-back.jpg": "/wedding-website/static/media/mountain-back.98ba9db45015a2dde618.jpg",
     "static/media/logo.svg": "/wedding-website/static/media/logo.9cfe7227205442e08bc58a88ef26aab9.svg",
     "index.html": "/wedding-website/index.html",
-    "main.29c06007.js.map": "/wedding-website/static/js/main.29c06007.js.map",
+    "main.ebd0fd13.js.map": "/wedding-website/static/js/main.ebd0fd13.js.map",
     "453.770c9077.chunk.js.map": "/wedding-website/static/js/453.770c9077.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.29c06007.js"
+    "static/js/main.ebd0fd13.js"
   ]
 }
