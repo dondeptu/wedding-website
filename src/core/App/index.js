@@ -2,13 +2,13 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
 import { GlobalStyle } from "./GlobalStyle";
 import { WeddingHomepage } from "../../features/weddingHomepage";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { HashRouter, Route, Routes } from "react-router";
 import { toHomepage, toOurStory, toPhotoBook, toStay } from "./routes";
 import { Navigation } from "../../common/Navigation";
 
 export const App = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <ThemeProvider theme={theme}>
                 <GlobalStyle />
                 <Navigation />
@@ -19,7 +19,7 @@ export const App = () => {
                     <Route path={toPhotoBook()} />
                 </Routes>
             </ThemeProvider>
-        </BrowserRouter>
+        </HashRouter>
     );
 };
 
