@@ -33,7 +33,7 @@ export const Container = styled.div`
     }
 `;
 
-export const Newlyweds = styled.h1`
+export const Title = styled.h1`
     font-size: 80px;
     font-weight: 400;
     margin: 0;
@@ -44,7 +44,7 @@ export const Newlyweds = styled.h1`
     }
 `;
 
-export const WeddingDate = styled.h2`
+export const ExtraTitle = styled.h3`
     order: -1;
     margin: 0;
     font-size: 28px;
@@ -55,7 +55,7 @@ export const WeddingDate = styled.h2`
     }
 `;
 
-export const WeddigPlace = styled.h3`
+export const SubTitle = styled.h2`
     margin: 0;
     font-family: ${({ theme }) => theme.headingFont};
     font-size: 54px;
