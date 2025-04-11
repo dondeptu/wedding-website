@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import { toHomepage, toOurStory, toPhotoBook, toStay } from "../../../core/App/routes";
+import { toHomepage, toOurStory, toPhotoBook, toRSVP, toStay } from "../../../core/App/routes";
 import { List, LogoLink, StyledNavLink, Wrapper } from "./styled";
 import { ButtonLink as RsvpButtonLink } from "../../ButtonLink/styled"
 
@@ -19,7 +19,7 @@ export const DesktopNav = () => (
                 <StyledNavLink to={toPhotoBook()}>Galeria</StyledNavLink>
             </li>
         </List>
-        <RsvpButtonLink aria-label="RSVP - potwierdź obecność">
+        <RsvpButtonLink to={toRSVP()} aria-label="RSVP - potwierdź obecność">
             RSVP
         </RsvpButtonLink>
     </Wrapper>
