@@ -1,6 +1,6 @@
 import { Header } from "../../common/Header";
 import { Section } from "./Section";
-import ourPhoto from "./images/mountain-back-2.jpg";
+import ourPhoto from "./images/mountain-back.jpg";
 import sidePhoto from "./images/mountain-distant.jpg";
 import banner from "./images/banner.jpeg";
 
