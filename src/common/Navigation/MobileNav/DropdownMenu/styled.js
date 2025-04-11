@@ -4,7 +4,7 @@ import styled, { css } from "styled-components";
 export const NavWrapper = styled.nav`
     opacity: 0;
     transition: opacity 0.3s ease;
-    z-index: 1;
+    z-index: -2;
     position: fixed;
     top: 0;
     left: 0;
@@ -14,6 +14,7 @@ export const NavWrapper = styled.nav`
 
     ${({ $isOpen }) => $isOpen && css`
         opacity: 1;
+        z-index: 1;
     `}
 `;
 
