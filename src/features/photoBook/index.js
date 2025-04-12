@@ -7,7 +7,7 @@ export const PhotoBook = () => (
         <Header
             banner={banner}
             title={"Galeria zdjęć"}
-            subTitle={"przesyłaj & oglądaj"}
+            subTitle={"przesyłaj i oglądaj"}
         />
         <Section />
     </>
