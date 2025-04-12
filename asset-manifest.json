@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/wedding-website/static/js/main.78a36318.js",
-    "static/js/453.770c9077.chunk.js": "/wedding-website/static/js/453.770c9077.chunk.js",
-    "static/media/mountain-distant.jpg": "/wedding-website/static/media/mountain-distant.e196518ce6b41d566520.jpg",
-    "static/media/beach.jpg": "/wedding-website/static/media/beach.7f0662dab0ed0b688542.jpg",
-    "static/media/banner.jpeg": "/wedding-website/static/media/banner.ec4800deb70ae8517083.jpeg",
-    "static/media/banner.jpg": "/wedding-website/static/media/banner.29b36cd0f4b2fb4ad087.jpg",
-    "static/media/mountain-back.jpg": "/wedding-website/static/media/mountain-back.98ba9db45015a2dde618.jpg",
-    "static/media/room.jpg": "/wedding-website/static/media/room.3d513e5fbfc94f6bfe8d.jpg",
-    "static/media/hotelRen.jpg": "/wedding-website/static/media/hotelRen.969c87f6cecf24f8c916.jpg",
-    "static/media/ourPhoto.jpg": "/wedding-website/static/media/ourPhoto.36fad375e8dd1a181d11.jpg",
-    "static/media/logo.svg": "/wedding-website/static/media/logo.9cfe7227205442e08bc58a88ef26aab9.svg",
-    "index.html": "/wedding-website/index.html",
-    "main.78a36318.js.map": "/wedding-website/static/js/main.78a36318.js.map",
-    "453.770c9077.chunk.js.map": "/wedding-website/static/js/453.770c9077.chunk.js.map"
+    "main.js": "/static/js/main.46216752.js",
+    "static/js/453.770c9077.chunk.js": "/static/js/453.770c9077.chunk.js",
+    "static/media/mountain-distant.jpg": "/static/media/mountain-distant.e196518ce6b41d566520.jpg",
+    "static/media/beach.jpg": "/static/media/beach.7f0662dab0ed0b688542.jpg",
+    "static/media/banner.jpeg": "/static/media/banner.ec4800deb70ae8517083.jpeg",
+    "static/media/banner.jpg": "/static/media/banner.29b36cd0f4b2fb4ad087.jpg",
+    "static/media/mountain-back.jpg": "/static/media/mountain-back.98ba9db45015a2dde618.jpg",
+    "static/media/room.jpg": "/static/media/room.3d513e5fbfc94f6bfe8d.jpg",
+    "static/media/hotelRen.jpg": "/static/media/hotelRen.969c87f6cecf24f8c916.jpg",
+    "static/media/ourPhoto.jpg": "/static/media/ourPhoto.36fad375e8dd1a181d11.jpg",
+    "static/media/logo.svg": "/static/media/logo.9cfe7227205442e08bc58a88ef26aab9.svg",
+    "index.html": "/index.html",
+    "main.46216752.js.map": "/static/js/main.46216752.js.map",
+    "453.770c9077.chunk.js.map": "/static/js/453.770c9077.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.78a36318.js"
+    "static/js/main.46216752.js"
   ]
 }
