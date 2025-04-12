@@ -10,6 +10,7 @@ import { selectIsMenuOpen } from "../../common/Navigation/MobileNav/mobileNavSli
 import { OurStory } from "../../features/ourStory";
 import { Footer } from "../../common/Footer";
 import { Stay } from "../../features/stay";
+import { PhotoBook } from "../../features/photoBook";
 
 export const App = () => {
     const isMenuOpen = useSelector(selectIsMenuOpen);
@@ -23,7 +24,7 @@ export const App = () => {
                     <Route path={toHomepage()} element={<WeddingHomepage />} />
                     <Route path={toOurStory()} element={<OurStory />} />
                     <Route path={toStay()} element={<Stay />} />
-                    <Route path={toPhotoBook()} />
+                    <Route path={toPhotoBook()} element={<PhotoBook />} />
                 </Routes>
                 <Footer />
             </ThemeProvider>
