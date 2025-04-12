@@ -1,4 +1,4 @@
-import { toOurStory, toPhotoBook, toRSVP, toStay } from "../../../../core/App/routes";
+import { toOurStory, toPhotoBook, toStay } from "../../../../core/App/routes";
 import { List, StyledNavLink, NavWrapper, LayoutWrapper } from "./styled";
 import { ButtonLink as RsvpButtonLink } from "../../../ButtonLink/styled";
 import { useDispatch, useSelector } from "react-redux";
@@ -38,7 +38,7 @@ export const DropdownMenu = () => {
                     </li>
                 </List>
                 <RsvpButtonLink
-                    to={toRSVP()}
+                    // to={toRSVP()}
                     onClick={() => dispatch(toggleMenu())}
                     aria-label="RSVP - potwierdź obecność"
                 >

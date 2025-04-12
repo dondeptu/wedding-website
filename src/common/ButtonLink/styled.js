@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { NavLink } from "react-router";
 
 export const ButtonLink = styled(NavLink)`
-    visibility: hidden;
+    //visibility: hidden;
     text-decoration: none;
     font-size: 18px;
     color: currentColor;
