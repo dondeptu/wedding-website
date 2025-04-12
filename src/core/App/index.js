@@ -9,6 +9,7 @@ import { useSelector } from "react-redux";
 import { selectIsMenuOpen } from "../../common/Navigation/MobileNav/mobileNavSlice";
 import { OurStory } from "../../features/ourStory";
 import { Footer } from "../../common/Footer";
+import { Stay } from "../../features/stay";
 
 export const App = () => {
     const isMenuOpen = useSelector(selectIsMenuOpen);
@@ -21,7 +22,7 @@ export const App = () => {
                 <Routes>
                     <Route path={toHomepage()} element={<WeddingHomepage />} />
                     <Route path={toOurStory()} element={<OurStory />} />
-                    <Route path={toStay()} />
+                    <Route path={toStay()} element={<Stay />} />
                     <Route path={toPhotoBook()} />
                 </Routes>
                 <Footer />

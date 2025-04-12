@@ -24,6 +24,10 @@ export const theme = {
             background: colors.cabbagePont,
         },
         navBackground: colors.flaxSmoke,
+        link: {
+            color: colors.cabbagePont,
+            active: colors.flaxSmoke,
+        },
         footer: {
             background: colors.codGray,
             link: colors.flaxSmoke,
