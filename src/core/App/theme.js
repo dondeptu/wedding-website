@@ -24,5 +24,9 @@ export const theme = {
             background: colors.cabbagePont,
         },
         navBackground: colors.flaxSmoke,
+        footer: {
+            background: colors.codGray,
+            link: colors.flaxSmoke,
+        },
     },
 };

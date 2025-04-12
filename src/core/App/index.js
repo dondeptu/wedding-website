@@ -8,6 +8,7 @@ import { Navigation } from "../../common/Navigation";
 import { useSelector } from "react-redux";
 import { selectIsMenuOpen } from "../../common/Navigation/MobileNav/mobileNavSlice";
 import { OurStory } from "../../features/ourStory";
+import { Footer } from "../../common/Footer";
 
 export const App = () => {
     const isMenuOpen = useSelector(selectIsMenuOpen);
@@ -23,6 +24,7 @@ export const App = () => {
                     <Route path={toStay()} />
                     <Route path={toPhotoBook()} />
                 </Routes>
+                <Footer />
             </ThemeProvider>
         </HashRouter>
     );

@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { ButtonLink } from "../../../common/ButtonLink/styled";
 
 export const Wrapper = styled.section`
-    height: 100vh;
     display: flex;
     flex-direction: column;
 `;
@@ -59,10 +58,6 @@ export const MainImageWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-
-    @media(max-width: ${({theme}) => theme.breakpoints.mobileMax}px) {
-        max-height: 550px;
-    }
 `;
 
 export const MainImage = styled.img`
@@ -78,10 +73,6 @@ export const SideImgWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-
-    @media(max-width: ${({theme}) => theme.breakpoints.mobileMax}px) {
-        min-height: 550px;
-    }
 `;
 
 export const SideImage = styled.img`
@@ -89,6 +80,10 @@ export const SideImage = styled.img`
     height: 100%;
     object-fit: cover;
     object-position: left;
+
+    @media(max-width: ${({theme}) => theme.breakpoints.mobileMax}px) {
+        min-height: 550px;
+    }
 `;
 
 export const ButtonWrapper = styled.div`
