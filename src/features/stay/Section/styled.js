@@ -18,10 +18,11 @@ export const Wrapper = styled.section`
 `;
 
 export const Image = styled.img`
-    max-width: 100%;
-    height: 100%;
+    width: 100%;
+    min-height: 352px;
     object-fit: cover;
     object-position: 60%;
+    text-align: center;
     
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
         order: 1;
