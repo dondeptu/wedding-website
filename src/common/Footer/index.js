@@ -7,7 +7,7 @@ export const Footer = () => {
         <FooterWrapper>
             <Paragraph>
                 Design by&nbsp;
-                <Link target="_blank" rel="noreferrer noopener" href={authorPath}>Donata Deptuła</Link>
+                <Link target="_blank" rel="noreferrer noopener" href={authorPath}>dondeptu</Link>
             </Paragraph>
         </FooterWrapper>
     );
