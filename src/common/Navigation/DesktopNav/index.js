@@ -22,6 +22,7 @@ export const DesktopNav = () => (
         <RsvpButtonLink
             // to={toRSVP()}
             aria-label="RSVP - potwierdź obecność"
+            style={{ visibility: "hidden" }}
         >
             RSVP
         </RsvpButtonLink>

@@ -41,6 +41,7 @@ export const DropdownMenu = () => {
                     // to={toRSVP()}
                     onClick={() => dispatch(toggleMenu())}
                     aria-label="RSVP - potwierdź obecność"
+                    style={{ visibility: "hidden" }}
                 >
                     RSVP
                 </RsvpButtonLink>
