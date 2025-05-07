@@ -11,6 +11,7 @@ import { OurStory } from "../../features/ourStory";
 import { Footer } from "../../common/Footer";
 import { Stay } from "../../features/stay";
 import { PhotoBook } from "../../features/photoBook";
+import { APIProvider } from "@vis.gl/react-google-maps";
 
 export const App = () => {
     const isMenuOpen = useSelector(selectIsMenuOpen);
@@ -21,7 +22,14 @@ export const App = () => {
                 <GlobalStyle $lockScroll={isMenuOpen} />
                 <Navigation />
                 <Routes>
-                    <Route path={toHomepage()} element={<WeddingHomepage />} />
+                    <Route
+                        path={toHomepage()}
+                        element={
+                            <APIProvider apiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
+                                <WeddingHomepage />
+                            </APIProvider>
+                        }
+                    />
                     <Route path={toOurStory()} element={<OurStory />} />
                     <Route path={toStay()} element={<Stay />} />
                     <Route path={toPhotoBook()} element={<PhotoBook />} />

@@ -1,0 +1,4 @@
+export const WEDDING_LOCATION = {
+    lat: 53.876827239990234,
+    lng: 18.2398624420166,
+};
