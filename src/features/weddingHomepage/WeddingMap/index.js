@@ -1,18 +1,17 @@
-import { MapWrapper } from "./styled";
-import { Map, Marker } from "@vis.gl/react-google-maps";
-import { WEDDING_LOCATION } from "./weddingLocation";
+import { MapContent } from "./MapContent";
+import { Content, Couple, Header, Info, MapSection, Place, Time } from "./styled";
+import coupleImage from "./couple.png";
 
 export const WeddingMap = () => (
-    <MapWrapper>
-        <Map
-            defaultZoom={14}
-            defaultCenter={WEDDING_LOCATION}
-        >
-            <Marker
-                position={WEDDING_LOCATION}
-                title="Zajazd REN Iwiczno"
-            />
-        </Map>
-
-    </MapWrapper>
+    <MapSection>
+        <Header>Ślub i wesele</Header>
+        <Content>
+            <Info>
+                <Couple src={coupleImage} />
+                <Time>16:00</Time>
+                <Place>Zajazd REN w Iwicznie<br />ul.&nbsp;Wczasowa 32<br />83-260 Iwiczno</Place>
+            </Info>
+            <MapContent />
+        </Content>
+    </MapSection>
 );
