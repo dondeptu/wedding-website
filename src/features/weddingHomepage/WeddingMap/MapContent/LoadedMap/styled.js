@@ -10,8 +10,25 @@ export const MapWrapper = styled.div`
         padding: 0 8px;
     }
 
-    @media(max-width: ${({theme}) => theme.breakpoints.mobileMax}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         width: 100%;
         height: 250px;
     }
+`;
+
+export const InfoWindowHeader = styled.h2`
+    color: ${({ theme }) => theme.colors.primary};
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+`;
+
+export const Address = styled.p`
+    color: ${({ theme }) => theme.colors.primary};
+    margin-top: 10px;
+    margin-bottom: 20px;
+`;
+
+export const InfoWindowLink = styled.a`
+    color: ${({ theme }) => theme.colors.link.color};
 `;

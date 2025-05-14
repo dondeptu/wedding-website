@@ -3,6 +3,7 @@ export const colors = {
     codGray: "#121212",
     flaxSmoke: "#7f886b",
     cabbagePont: "#3e4f3c",
+    scienceBlue: "#0064d1",
 };
 
 export const theme = {
@@ -25,7 +26,8 @@ export const theme = {
         },
         navBackground: colors.flaxSmoke,
         link: {
-            color: colors.cabbagePont,
+            colorPrimary: colors.cabbagePont,
+            color: colors.scienceBlue,
             active: colors.flaxSmoke,
         },
         footer: {

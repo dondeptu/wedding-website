@@ -51,7 +51,7 @@ export const Paragraph = styled.p`
 `;
 
 export const Link = styled.a`
-    color: ${({ theme }) => theme.colors.link.color};
+    color: ${({ theme }) => theme.colors.link.colorPrimary};
     text-decoration: none;
     border-bottom: 1px solid;
     padding-bottom: 1px;
