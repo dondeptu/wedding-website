@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.b0f3f8e3.js",
+    "main.js": "/static/js/main.0d0a4c38.js",
     "static/js/453.770c9077.chunk.js": "/static/js/453.770c9077.chunk.js",
     "static/media/mountain-distant.jpg": "/static/media/mountain-distant.e196518ce6b41d566520.jpg",
     "static/media/beach.jpg": "/static/media/beach.7f0662dab0ed0b688542.jpg",
@@ -10,12 +10,13 @@
     "static/media/room.jpg": "/static/media/room.3d513e5fbfc94f6bfe8d.jpg",
     "static/media/hotelRen.jpg": "/static/media/hotelRen.969c87f6cecf24f8c916.jpg",
     "static/media/ourPhoto.jpg": "/static/media/ourPhoto.36fad375e8dd1a181d11.jpg",
+    "static/media/couple.png": "/static/media/couple.690c4cf59091fc73ea26.png",
     "static/media/logo.svg": "/static/media/logo.9cfe7227205442e08bc58a88ef26aab9.svg",
     "index.html": "/index.html",
-    "main.b0f3f8e3.js.map": "/static/js/main.b0f3f8e3.js.map",
+    "main.0d0a4c38.js.map": "/static/js/main.0d0a4c38.js.map",
     "453.770c9077.chunk.js.map": "/static/js/453.770c9077.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.b0f3f8e3.js"
+    "static/js/main.0d0a4c38.js"
   ]
 }
