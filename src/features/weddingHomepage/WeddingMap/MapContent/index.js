@@ -1,3 +1,4 @@
+import { Error } from "./Error";
 import { LoadedMap } from "./LoadedMap";
 import { APILoadingStatus, useApiLoadingStatus } from "@vis.gl/react-google-maps";
 
@@ -10,7 +11,7 @@ export const MapContent = () => {
             return <div>Ładowanie mapy...</div>;
 
         case APILoadingStatus.FAILED:
-            return <div>Nie udało się załadować mapy. Sprawdź połączenie lub odśwież stronę</div>;
+            return <Error />;
 
         case APILoadingStatus.LOADED:
             return <LoadedMap />
