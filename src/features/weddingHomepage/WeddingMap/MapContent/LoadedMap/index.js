@@ -28,10 +28,12 @@ export const LoadedMap = () => {
                 />
                 {infoWindowShown && (
                     <InfoWindow
+                        headerContent={
+                            <InfoWindowHeader>Zajazd REN Iwiczno</InfoWindowHeader>
+                        }
                         anchor={marker}
                         onClose={handleClose}
                     >
-                        <InfoWindowHeader>Zajazd REN Iwiczno</InfoWindowHeader>
                         <Address>Wczasowa 32, 83-260 Iwiczno</Address>
                         <InfoWindowLink
                             href={`https://www.google.com/maps/dir/?api=1&destination=

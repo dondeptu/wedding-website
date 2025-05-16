@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const MapWrapper = styled.div`
+    .gm-style {
+        color: initial;
+    }
+
     width: 900px;
     height: 500px;
 
@@ -12,7 +16,7 @@ export const MapWrapper = styled.div`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         width: 100%;
-        height: 250px;
+        height: 350px;
     }
 `;
 
@@ -26,7 +30,6 @@ export const InfoWindowHeader = styled.h2`
 export const Address = styled.p`
     color: ${({ theme }) => theme.colors.primary};
     margin-top: 10px;
-    margin-bottom: 20px;
 `;
 
 export const InfoWindowLink = styled.a`
