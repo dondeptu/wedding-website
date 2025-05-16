@@ -45,7 +45,6 @@ export const Content = styled.div`
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         flex-direction: column;
         align-items: center;
-        gap: 40px;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
@@ -61,7 +60,7 @@ export const Info = styled.div`
     gap: 44px;
 
     @media(max-width: ${({theme}) => theme.breakpoints.mobileMax}px) {
-        gap: 36px;
+        gap: 30px;
     }
 `
 
