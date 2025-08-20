@@ -4,6 +4,7 @@ import ourPhoto from "./images/mountain-back.jpg";
 import sidePhoto from "./images/mountain-distant.jpg";
 import banner from "./images/banner.jpeg";
 import { WeddingMap } from "./WeddingMap";
+import { Info } from "./Info";
 
 export const WeddingHomepage = () => (
     <main>
@@ -20,5 +21,6 @@ export const WeddingHomepage = () => (
             sideImgPath={sidePhoto}
         />
         <WeddingMap />
+        <Info />
     </main>
 );
