@@ -6,8 +6,7 @@ export const Info = () => (
             <ListItem>
                 <InfoTitle>Doba hotelowa</InfoTitle>
                 <InfoDescription>
-                    Doba hotelowa rozpoczyna się o godzinie <strong>14:00</strong> i trwa do godziny
-                    <strong>13:00</strong> dnia następnego.
+                    Doba hotelowa rozpoczyna się o godzinie <strong>14:00</strong> i trwa do godziny <strong>13:00</strong> dnia następnego.
                 </InfoDescription>
             </ListItem>
             <ListItem>
@@ -27,8 +26,7 @@ export const Info = () => (
                     <li>✒️ dodajcie kilka słów od serca.</li>
                 </Steps>
                 <InfoDescription>
-                    Do Waszej dyspozycji przygotowaliśmy
-                    <strong>kolorowe długopisy, naklejki oraz drobne dodatki</strong>, które pozwolą Wam ozdobić wpis w wyjątkowy sposób.<br />Niech każda strona stanie się małym dziełem sztuki i pamiątką, do której z radością będziemy wracać przez lata. 💕
+                    Do Waszej dyspozycji przygotowaliśmy <strong>kolorowe długopisy, naklejki oraz drobne dodatki</strong>, które pozwolą Wam ozdobić wpis w wyjątkowy sposób.<br />Niech każda strona stanie się małym dziełem sztuki i pamiątką, do której z radością będziemy wracać przez lata. 💕
                 </InfoDescription>
             </ListItem>
             <ListItem>
@@ -40,9 +38,8 @@ export const Info = () => (
             <ListItem>
                 <InfoTitle>Obcasy & trawa</InfoTitle>
                 <InfoDescription>
-                    Ponieważ nasza uroczystość odbywa się w plenerze, przygotowaliśmy specjalne
-                    <strong>nasadki na obcasy</strong>, które ułatwią poruszanie się po trawie. 🌿👠<br />
-                    Nasza Świadkowa będzie miała je przy sobie i chętnie je Wam udostępni.<br />Jeśli macie szpilki i chcielibyście z nich skorzystać – wystarczy się do niej zgłosić.
+                    Ponieważ nasza uroczystość odbywa się w plenerze, przygotowaliśmy specjalne <strong>nasadki na obcasy</strong>, które ułatwią poruszanie się po trawie. 🌿👠<br />
+                    Nasza Świadkowa Kasia będzie miała je przy sobie i chętnie je Wam udostępni.<br />Jeśli macie szpilki i chcielibyście z nich skorzystać – wystarczy się do niej zgłosić.
                 </InfoDescription>
             </ListItem>
         </List>
