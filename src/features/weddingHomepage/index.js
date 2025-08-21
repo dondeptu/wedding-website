@@ -5,6 +5,7 @@ import sidePhoto from "./images/mountain-distant.jpg";
 import banner from "./images/banner.jpeg";
 import { WeddingMap } from "./WeddingMap";
 import { Info } from "./Info";
+import { CountdownSection } from "./CountdownSection";
 
 export const WeddingHomepage = () => (
     <main>
@@ -22,5 +23,6 @@ export const WeddingHomepage = () => (
         />
         <WeddingMap />
         <Info />
+        <CountdownSection />
     </main>
 );
