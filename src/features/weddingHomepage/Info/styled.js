@@ -36,6 +36,11 @@ export const InfoTitle = styled.h3`
 
 export const InfoDescription = styled.p`
     margin: 0;
+    line-height: 1.32;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        line-height: 1.21;
+    }
 `;
 
 export const Steps = styled.ul`
